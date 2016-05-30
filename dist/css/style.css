@@ -3,7 +3,7 @@ body {
   padding: 0;
   color: #343b3d;
   font-family: 'Raleway', sans-serif;
-  height: 3000px;
+  height: 5000px;
 }
 section {
   position: relative;
@@ -132,36 +132,34 @@ section {
   width: 75%;
 }
 .container section#portfolio .wrapper .box_wrapper {
-  height: 600px;
-  background: #ffa500;
+  height: 400px;
 }
 .container section#portfolio .wrapper .box_wrapper .box {
   width: 700px;
-  height: 500px;
-  padding-top: 100px;
+  height: 400px;
 }
 .container section#portfolio .wrapper .box_wrapper .box .work {
   float: left;
-  width: 33.33%;
+  width: 25%;
   height: 100%;
+  background: url("../images/work.png");
+  background-size: cover;
 }
-.container section#portfolio .wrapper .box_wrapper .box .work.middle_upper {
-  height: 250px;
-  background: #ffc0cb;
-  margin-top: -50px;
+.container section#portfolio .wrapper .box_wrapper .box .work:nth-child(2),
+.container section#portfolio .wrapper .box_wrapper .box .work:nth-child(4) {
+  background: url("../images/work1.png") center;
+  background-size: cover;
 }
-.container section#portfolio .wrapper .box_wrapper .box .work.middle_lower {
-  height: 250px;
-  background: #f00;
-  margin-bottom: -25%;
+.container section#contact {
+  text-transform: uppercase;
+  text-align: center;
 }
-.container section#portfolio .wrapper .box_wrapper .box .upper {
+.container section#contact a {
+  display: block;
   width: 100%;
-  height: 50%;
-  background: #00f;
-}
-.container section#portfolio .wrapper .box_wrapper .box .lower {
-  width: 100%;
-  height: 50%;
-  background: #ffc0cb;
+  text-decoration: none;
+  line-height: 10;
+  color: #343b3d;
+  font-size: 30px;
+  background: #27aad6;
 }

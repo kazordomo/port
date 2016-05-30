@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #343b3d;
+  font-family: 'Raleway', sans-serif;
+  height: 3000px;
+}
+section {
+  position: relative;
+  margin-top: 100px;
+}
+.title {
+  font-size: 30px;
+  text-align: center;
+}
+.line {
+  width: 30px;
+  margin: 50px auto;
+  border-bottom: 2px dotted #6f7475;
+}
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.container {
+  width: 960px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.container #top_header {
+  width: 100%;
+  padding: 75px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.container #top_header .logo_wrapper {
+  position: relative;
+}
+.container #top_header .logo_wrapper .logo {
+  position: absolute;
+  top: -15px;
+  left: -30px;
+  padding: 30px;
+  border-radius: 50%;
+  background: #27aad6;
+}
+.container #top_header a {
+  width: 20%;
+  text-decoration: none;
+  color: #6f7475;
+  border-bottom: 1px solid #6f7475;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.container #top_header a:nth-child(4),
+.container #top_header a:nth-child(5) {
+  text-align: right;
+}
+.container #top_header a:hover {
+  color: #27aad6;
+  border-bottom: 1px solid #27aad6;
+}
+.container header {
+  text-align: center;
+}
+.container header .title {
+  line-height: 1.5;
+}
+.container header .title .light {
+  font-size: 27px;
+  opacity: 0.8;
+}
+.container header .title .lighter {
+  font-size: 24px;
+  opacity: 0.6;
+}
+.container header .image {
+  width: 100%;
+  margin: 0 auto;
+}
+.container header .image img {
+  width: 300px;
+}
+.container section#about .text {
+  border-sizing: border-box;
+  float: left;
+  width: 46%;
+  margin: 0% 2%;
+  line-height: 2;
+}
+.container section#skills .section {
+  float: left;
+  width: 46%;
+  margin: 0 2%;
+}
+.container section#skills .section .col {
+  position: relative;
+  width: 100%;
+  padding: 5px 0px;
+  color: #6f7475;
+}
+.container section#skills .section .col .ability {
+  position: absolute;
+  z-index: 101;
+  border-bottom: 2px solid #27aad6;
+}
+.container section#skills .section .col .rest {
+  position: absolute;
+  width: 100%;
+  border-bottom: 2px solid #6f7475;
+  opacity: 0.2;
+}
+.container section#skills .section .col .html {
+  width: 90%;
+}
+.container section#skills .section .col .css {
+  width: 90%;
+}
+.container section#skills .section .col .javascript {
+  width: 70%;
+}
+.container section#skills .section .col .framework {
+  width: 75%;
+}
+.container section#portfolio .wrapper .box_wrapper {
+  height: 600px;
+  background: #ffa500;
+}
+.container section#portfolio .wrapper .box_wrapper .box {
+  width: 700px;
+  height: 500px;
+  padding-top: 100px;
+}
+.container section#portfolio .wrapper .box_wrapper .box .work {
+  float: left;
+  width: 33.33%;
+  height: 100%;
+}
+.container section#portfolio .wrapper .box_wrapper .box .work.middle_upper {
+  height: 250px;
+  background: #ffc0cb;
+  margin-top: -50px;
+}
+.container section#portfolio .wrapper .box_wrapper .box .work.middle_lower {
+  height: 250px;
+  background: #f00;
+  margin-bottom: -25%;
+}
+.container section#portfolio .wrapper .box_wrapper .box .upper {
+  width: 100%;
+  height: 50%;
+  background: #00f;
+}
+.container section#portfolio .wrapper .box_wrapper .box .lower {
+  width: 100%;
+  height: 50%;
+  background: #ffc0cb;
+}

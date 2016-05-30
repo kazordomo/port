@@ -1,0 +1,181 @@
+@import '_variables.styl';
+
+body
+	margin: 0;
+	padding: 0;
+	color: $black;
+	font-family: 'Raleway', sans-serif;
+	height: 3000px;
+	
+section
+	position: relative;
+	margin-top: 100px;
+	
+.title
+	font-size: 30px;
+	text-align: center;
+	
+.line
+	width: 30px;
+	margin: 50px auto;
+	border-bottom: 2px dotted $gray;
+	
+.wrapper
+	width: 700px;
+	margin: 0 auto;
+	
+.clearfix:before,
+.clearfix:after
+	content: " ";
+	display: table;
+  
+.clearfix:after
+	clear: both;
+	
+.container
+	width: 960px;
+	max-width: 90%;
+	margin: 0 auto;
+	
+	#top_header
+		width: 100%;
+		padding: 75px 0px;
+		display: flex;
+		justify-content: space-between;
+		
+		.logo_wrapper
+			position: relative;
+			
+			.logo
+				position: absolute;
+				top: -15px;
+				left: -30px;	
+				padding: 30px;
+				border-radius: 50%;
+				background: $blue;
+		
+		a
+			width: 20%;
+			text-decoration: none;
+			color: $gray;
+			border-bottom: 1px solid $gray;
+			-webkit-transition: all .3s ease-in-out;
+			-moz-transition: all .3s ease-in-out;
+			transition: all .3s ease-in-out;
+			&:nth-child(4), &:nth-child(5)
+				text-align: right;
+			&:hover
+				color: $blue;
+				border-bottom: 1px solid $blue;
+				
+	header
+		text-align: center;
+		
+		.title
+			line-height: 1.5;
+			
+			.light
+				font-size: 27px;
+				opacity: 0.8;
+				
+			.lighter
+				font-size: 24px;
+				opacity: 0.6;
+				
+		.image
+			width: 100%;
+			margin: 0 auto;
+			
+			img
+				width: 300px;
+				// margin-top: -30px;
+				
+	section#about
+		
+		.text
+			border-sizing: border-box;
+			float: left;
+			width: 46%;
+			margin: 0% 2%;
+			line-height: 2;
+			
+	section#skills
+		
+		.section
+			
+			float: left;
+			width: 46%;
+			margin: 0 2%;
+			
+			.col
+				position: relative;
+				width: 100%;
+				padding: 5px 0px;
+				color: $gray;
+				
+				.ability
+					position: absolute;
+					z-index: 101;
+					border-bottom: 2px solid $blue;
+				
+				.rest
+					position: absolute;
+					width: 100%;
+					border-bottom: 2px solid $gray;
+					opacity: 0.2;
+					
+				.html
+					width: 90%;
+					
+				.css
+					width: 90%;
+					
+				.javascript
+					width: 70%;
+					
+				.framework
+					width: 75%;
+					
+	section#portfolio
+		
+		.wrapper
+			
+			.box_wrapper
+				height: 600px;
+				background: orange;
+			
+				.box
+					width: 700px;
+					height: 500px;
+					padding-top: 100px;
+					
+					.work
+						float: left;
+						width: 33.33%;
+						height: 100%;
+						
+					.work.middle_upper
+						height: 250px;
+						background: pink;
+						margin-top: -50px;
+						
+					.work.middle_lower
+						height: 250px;
+						background: red;
+						margin-bottom: -25%;
+						
+					.upper
+						width: 100%;
+						height: 50%;
+						background: blue;
+					
+					.lower
+						width: 100%;
+						height: 50%;
+						background: pink;
+			
+		
+
+			
+
+	

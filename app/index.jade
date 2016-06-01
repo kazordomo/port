@@ -3,32 +3,38 @@ html(lang="en")
 	head
 		link(rel="stylesheet" href="css/style.css")
 		link(href='https://fonts.googleapis.com/css?family=Raleway:400,700,300' rel='stylesheet' type='text/css')
+		link(href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css')
+		link(href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" rel="stylesheet")
+
 	body
 		
 		.container
 
 			#top_header
-				a(href="#") Om mig
-				a(href="#") Kunskap
-				.logo_wrapper
-					.logo
-				a(href="#") Portfolio
-				a(href="#") Kontakt
+				a(href="#about") Om mig
+				a(href="#skills") Kunskap
+				//- .logo_wrapper
+				//- 	.logo
+				a(href="#portfolio") Portfolio
+				a(href="#contact") Kontakt
 
 			header
+
+				include svg.html
+
 				.title Lorem ipsum dorem orum,<br><span class="light">Korum lorum sorum ba,</span><br><span class="lighter">Rokka lokka zak.</span>
 
-				.image
-					img(src="images/zak.png")
+				//- i(class="fa fa-angle-double-down" aria-hidden="true")
+
 
 			section#about.clearfix
 				.title Vem jag är
 
 				.line
 
-				.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur. Fusce magna dui, eleifend ut porta in, maximus eget erat. Pellentesque id lacus tincidunt quam feugiat finibus eget a est. Nunc finibus eros sit amet ipsum vulputate, in tempus magna pretium. Aliquam semper in mauris ac ultrices. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur. Fusce magna dui, eleifend ut porta in, maximus eget erat. Pellentesque id lacus tincidunt quam feugiat finibus eget a est. Nunc finibus eros sit amet ipsum vulputate, in tempus magna pretium.
+				.wrapper
 
-				.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur. Fusce magna dui, eleifend ut porta in, maximus eget erat. Pellentesque id lacus tincidunt quam feugiat finibus eget a est. Nunc finibus eros sit amet ipsum vulputate, in tempus magna pretium. Aliquam semper in mauris ac ultrices. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur. Fusce magna dui, eleifend ut porta in, maximus eget erat. Pellentesque id lacus tincidunt quam feugiat finibus eget a est. Nunc finibus eros sit amet ipsum vulputate, in tempus magna pretium.
+					.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur. Fusce magna dui, eleifend ut porta in, maximus eget erat. Pellentesque id lacus tincidunt quam feugiat finibus eget a est. Nunc finibus eros sit amet ipsum vulputate, in tempus magna pretium. Aliquam semper in mauris ac ultrices. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur. Fusce magna dui, eleifend ut porta in, maximus eget erat. Pellentesque id lacus tincidunt quam feugiat finibus eget a est. Nunc finibus eros sit amet ipsum vulputate, in tempus magna pretium.
 
 			section#skills.clearfix
 
@@ -79,15 +85,46 @@ html(lang="en")
 				.line
 
 				.wrapper
-					.box_wrapper
-						.box
-							.work
-							.work
-							.work
-							.work
+					.box
+						.work.upper
+							.info
+								.title Portfolio
+								.line
+								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
+						.work.upper
+							.info
+								.title Portfolio
+								.line
+								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
+						.work.upper
+							.info
+								.title Portfolio
+								.line
+								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
+						.work
+							.info
+								.title Portfolio
+								.line
+								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
+						.work
+							.info
+								.title Portfolio
+								.line
+								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
+						.work
+							.info
+								.title Portfolio
+								.line
+								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
 
 			section#contact
-				a(href="#") zak.eklund@live.se
+				.title Kontakta mig via email
+
+				.line
+				a(href="#") Email
+
+			section#footer
+
 
 
 

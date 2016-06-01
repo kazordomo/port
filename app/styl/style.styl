@@ -21,7 +21,7 @@ section
 	border-bottom: 2px dotted $gray;
 	
 .wrapper
-	width: 700px;
+	max-width: 700px;
 	margin: 0 auto;
 	
 .clearfix:before,
@@ -146,6 +146,9 @@ section
 				padding: 5px 0px;
 				color: $gray;
 				
+				.launched
+					transition: all .8s ease-in-out;
+				
 				.ability
 					position: absolute;
 					z-index: 101;
@@ -155,19 +158,47 @@ section
 					position: absolute;
 					width: 100%;
 					border-bottom: 2px solid $gray;
-					opacity: 0.2;
+					opacity: 0.3;
 					
 				.html
-					width: 90%;
+					width: 0%;
+					&.launched
+						width: 90%;
 					
 				.css
-					width: 90%;
+					width: 0%;
+					&.launched
+						width: 90%;
 					
 				.javascript
-					width: 70%;
+					width: 0%;
+					&.launched
+						width: 70%;
 					
-				.framework
-					width: 75%;
+				.front_framework
+					width: 0%;
+					&.launched
+						width: 75%;
+						
+				.csharp
+					width: 0%;
+					&.launched
+						width: 20%;
+						
+				.php
+					width: 0%;
+					&.launched
+						width: 20%;
+						
+				.node
+					width: 0%;
+					&.launched
+						width: 15%;
+						
+				.back_framework
+					width: 0%;
+					&.launched
+						width: 20%;
 					
 	section#portfolio
 		
@@ -177,10 +208,6 @@ section
 				max-width: 700px;
 				display: flex;
 				flex-flow: row wrap;
-				justify-content: space-between;
-				
-				.work.upper
-					margin-bottom: 0.5%;
 					
 				.work
 					position: relative;
@@ -191,6 +218,7 @@ section
 					color: #FFFFFF;
 					cursor: pointer;
 					overflow: hidden;
+					border: 1px solid #FFFFFF;
 					&:hover
 						.info
 							opacity: 1;
@@ -243,9 +271,23 @@ section
 				box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 				
 	section#footer
+		position: relative;
 		width: 100%;
-		height: 500px;
 		border-top: 1px solid $gray;
+		text-align: center;
+		
+		.cr
+			margin-top: 120px;
+			color: $gray;
+			
+		img
+			position: absolute;
+			width: 200px;
+			top: 0;
+			left: 0;
+			
+// @media (max-width: 800px)
+
 			
 		
 

@@ -18,7 +18,7 @@ section {
   border-bottom: 2px dotted #6f7475;
 }
 .wrapper {
-  width: 700px;
+  max-width: 700px;
   margin: 0 auto;
 }
 .clearfix:before,
@@ -124,6 +124,9 @@ section {
   padding: 5px 0px;
   color: #6f7475;
 }
+.container section#skills .section .col .launched {
+  transition: all 0.8s ease-in-out;
+}
 .container section#skills .section .col .ability {
   position: absolute;
   z-index: 101;
@@ -133,28 +136,60 @@ section {
   position: absolute;
   width: 100%;
   border-bottom: 2px solid #6f7475;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 .container section#skills .section .col .html {
+  width: 0%;
+}
+.container section#skills .section .col .html.launched {
   width: 90%;
 }
 .container section#skills .section .col .css {
+  width: 0%;
+}
+.container section#skills .section .col .css.launched {
   width: 90%;
 }
 .container section#skills .section .col .javascript {
+  width: 0%;
+}
+.container section#skills .section .col .javascript.launched {
   width: 70%;
 }
-.container section#skills .section .col .framework {
+.container section#skills .section .col .front_framework {
+  width: 0%;
+}
+.container section#skills .section .col .front_framework.launched {
   width: 75%;
+}
+.container section#skills .section .col .csharp {
+  width: 0%;
+}
+.container section#skills .section .col .csharp.launched {
+  width: 20%;
+}
+.container section#skills .section .col .php {
+  width: 0%;
+}
+.container section#skills .section .col .php.launched {
+  width: 20%;
+}
+.container section#skills .section .col .node {
+  width: 0%;
+}
+.container section#skills .section .col .node.launched {
+  width: 15%;
+}
+.container section#skills .section .col .back_framework {
+  width: 0%;
+}
+.container section#skills .section .col .back_framework.launched {
+  width: 20%;
 }
 .container section#portfolio .wrapper .box {
   max-width: 700px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-}
-.container section#portfolio .wrapper .box .work.upper {
-  margin-bottom: 0.5%;
 }
 .container section#portfolio .wrapper .box .work {
   position: relative;
@@ -165,6 +200,7 @@ section {
   color: #fff;
   cursor: pointer;
   overflow: hidden;
+  border: 1px solid #fff;
 }
 .container section#portfolio .wrapper .box .work:hover .info {
   opacity: 1;
@@ -215,9 +251,20 @@ section {
   box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.75);
 }
 .container section#footer {
+  position: relative;
   width: 100%;
-  height: 500px;
   border-top: 1px solid #6f7475;
+  text-align: center;
+}
+.container section#footer .cr {
+  margin-top: 120px;
+  color: #6f7475;
+}
+.container section#footer img {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 0;
 }
 @-moz-keyframes blink {
   0% {

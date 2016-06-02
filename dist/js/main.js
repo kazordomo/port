@@ -12,7 +12,7 @@ function startSkills() {
 
 	yPos = window.pageYOffset;
 
-	if(yPos > 900) {
+	if(yPos > 880) {
 		html.className += ' launched';
 		css.className += ' launched';
 		javascript.className += ' launched';

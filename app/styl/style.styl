@@ -115,6 +115,7 @@ section
 			.lighter
 				font-size: 24px;
 				opacity: 0.6;
+				color: $blue;
 				
 		#svg2
 			width: 500px;
@@ -211,7 +212,7 @@ section
 					
 				.work
 					position: relative;
-					width: 33%;
+					width: 49.7%;
 					height: 350px;
 					background: url(../images/portfolio.jpg);
 					background-size: cover;
@@ -223,6 +224,19 @@ section
 						.info
 							opacity: 1;
 							transform: translate(0%, 0%) scale(1);
+					&:first-child
+						width: 33%;
+						background: url(../images/zakeklund.png);
+						background-size: cover;
+					&:nth-child(2)
+						width: 33%;
+						background: url(../images/paykay.png);
+						background-size: cover;
+					&:nth-child(3)
+						width: 33%;
+					&:nth-child(4)
+						background: url(../images/alejandro.png);
+						background-size: cover;
 					
 					.info
 						
@@ -243,6 +257,7 @@ section
 							
 						.line
 							width: 15px;
+							border: 1px solid #FFFFFF;
 							
 						.text
 							text-align: center;
@@ -277,7 +292,8 @@ section
 		text-align: center;
 		
 		.cr
-			margin-top: 120px;
+			// margin-top: 120px;
+			padding: 50px 0px;
 			color: $gray;
 			
 		img
@@ -286,7 +302,25 @@ section
 			top: 0;
 			left: 0;
 			
-// @media (max-width: 800px)
+
+@media(max-width: 690px)
+
+	.container
+		
+		section#portfolio
+			
+			.wrapper
+				
+				.box
+						
+					.work
+						// CHANGE
+						width: 49% !important;
+						border: 1% solid #FFFFFF;
+						&:last-child
+							width: 98.3% !important;
+		
+
 
 			
 		

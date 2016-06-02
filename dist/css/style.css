@@ -98,6 +98,7 @@ section {
 .container header .title .lighter {
   font-size: 24px;
   opacity: 0.6;
+  color: #27aad6;
 }
 .container header #svg2 {
   width: 500px;
@@ -193,7 +194,7 @@ section {
 }
 .container section#portfolio .wrapper .box .work {
   position: relative;
-  width: 33%;
+  width: 49.7%;
   height: 350px;
   background: url("../images/portfolio.jpg");
   background-size: cover;
@@ -205,6 +206,23 @@ section {
 .container section#portfolio .wrapper .box .work:hover .info {
   opacity: 1;
   transform: translate(0%, 0%) scale(1);
+}
+.container section#portfolio .wrapper .box .work:first-child {
+  width: 33%;
+  background: url("../images/zakeklund.png");
+  background-size: cover;
+}
+.container section#portfolio .wrapper .box .work:nth-child(2) {
+  width: 33%;
+  background: url("../images/paykay.png");
+  background-size: cover;
+}
+.container section#portfolio .wrapper .box .work:nth-child(3) {
+  width: 33%;
+}
+.container section#portfolio .wrapper .box .work:nth-child(4) {
+  background: url("../images/alejandro.png");
+  background-size: cover;
 }
 .container section#portfolio .wrapper .box .work .info {
   position: absolute;
@@ -224,6 +242,7 @@ section {
 }
 .container section#portfolio .wrapper .box .work .info .line {
   width: 15px;
+  border: 1px solid #fff;
 }
 .container section#portfolio .wrapper .box .work .info .text {
   text-align: center;
@@ -257,7 +276,7 @@ section {
   text-align: center;
 }
 .container section#footer .cr {
-  margin-top: 120px;
+  padding: 50px 0px;
   color: #6f7475;
 }
 .container section#footer img {
@@ -265,6 +284,15 @@ section {
   width: 200px;
   top: 0;
   left: 0;
+}
+@media (max-width: 690px) {
+  .container section#portfolio .wrapper .box .work {
+    width: 49% !important;
+    border: 1% solid #fff;
+  }
+  .container section#portfolio .wrapper .box .work:last-child {
+    width: 98.3% !important;
+  }
 }
 @-moz-keyframes blink {
   0% {

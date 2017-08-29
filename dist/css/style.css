@@ -15,7 +15,7 @@ section {
 .line {
   width: 30px;
   margin: 50px auto;
-  border-bottom: 2px dotted #6f7475;
+  border-bottom: 1px solid #6f7475;
 }
 .wrapper {
   max-width: 700px;
@@ -52,6 +52,8 @@ section {
   margin: 0 auto;
 }
 .container #top_header {
+  position: relative;
+  z-index: 999;
   width: 100%;
   padding: 75px 0px;
   display: flex;
@@ -155,7 +157,7 @@ section {
   width: 0%;
 }
 .container section#skills .section .col .javascript.launched {
-  width: 70%;
+  width: 90%;
 }
 .container section#skills .section .col .front_framework {
   width: 0%;
@@ -173,13 +175,13 @@ section {
   width: 0%;
 }
 .container section#skills .section .col .php.launched {
-  width: 20%;
+  width: 30%;
 }
 .container section#skills .section .col .node {
   width: 0%;
 }
 .container section#skills .section .col .node.launched {
-  width: 15%;
+  width: 50%;
 }
 .container section#skills .section .col .back_framework {
   width: 0%;

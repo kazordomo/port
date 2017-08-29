@@ -13,8 +13,6 @@ html(lang="en")
 			#top_header
 				a(href="#about") Om mig
 				a(href="#skills") Kunskap
-				//- .logo_wrapper
-				//- 	.logo
 				a(href="#portfolio") Portfolio
 				a(href="#contact") Kontakt
 
@@ -23,8 +21,6 @@ html(lang="en")
 				include svg.html
 
 				.title Lorem ipsum dorem orum,<br><span class="light">Korum lorum sorum ba,</span><br><span class="lighter">Rokka lokka zak.</span>
-
-				//- i(class="fa fa-angle-double-down" aria-hidden="true")
 
 
 			section#about.clearfix
@@ -42,7 +38,7 @@ html(lang="en")
 
 				.line
 
-				.section
+				.section.frontend
 					.col
 						p HTML
 						.ability.html
@@ -60,7 +56,7 @@ html(lang="en")
 						.ability.front_framework
 						.rest
 
-				.section
+				.section.backend
 					.col
 						p C#
 						.ability.csharp
@@ -111,11 +107,6 @@ html(lang="en")
 								.title Portfolio
 								.line
 								.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
-						//- .work
-						//- 	.info
-						//- 		.title Portfolio
-						//- 		.line
-						//- 		.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie est sit amet sapien viverra consectetur.
 
 			section#contact
 				.title Kontakta mig via email
@@ -130,8 +121,8 @@ html(lang="en")
 					p Stockholm,
 					p 2016, all rights reserved.
 
-				//- img(src="/images/zak.png")
 
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js")
 	script(src="js/main.js")
 
 
